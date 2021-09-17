@@ -5,7 +5,7 @@ const router = express.Router();
 router.post("/", async (req, res) => {
   try {
     let rates = new Rate(req.body);
-    rates = await rate.save();
+    rates = await rates.save();
     res.status(200).json({
       status: 200,
       data: rates,
