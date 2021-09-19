@@ -33,4 +33,19 @@ router.get("/", async (req, res) => {
   }
 });
 
+router.get("/:postId", async (req, res) => {
+  try {
+    let rates = await Rate.find({ _id: req.params.postId });
+    res.status(200).json({
+      status: 200,
+      data: rates,
+    });
+  } catch (err) {
+    res.status(400).json({
+      status: 400,
+      message: err.message,
+    });
+  }
+});
+
 module.exports = router;
