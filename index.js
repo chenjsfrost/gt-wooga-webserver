@@ -8,6 +8,7 @@ const port = 3031;
 const config = require("./config");
 
 const rateRouter = require("./routes/rate");
+const rateReportRouter = require("./routes/rateReport");
 const qnsRouter = require("./routes/question");
 const responseRouter = require("./routes/response");
 
@@ -29,6 +30,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use("/rates", rateRouter);
+app.use("/rateReport", rateReportRouter);
 app.use("/questions", qnsRouter);
 app.use("/responses", responseRouter);
 
