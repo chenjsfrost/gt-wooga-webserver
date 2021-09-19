@@ -178,3 +178,17 @@ Result:
     "message": "Question has been deleted successfully"
 }
 ```
+
+<b>Performing a `GET - /rateReport`</b>
+
+Example:
+```
+Result:
+{
+    "rating_breakdown": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+    }
+}
+```
