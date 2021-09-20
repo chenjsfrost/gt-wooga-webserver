@@ -1,0 +1,318 @@
+{
+	"info": {
+		"_postman_id": "0955475f-4c6f-4ba1-b723-a349dafec4c9",
+		"name": "GT-Wooga",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "rates",
+			"item": [
+				{
+					"name": "post-rates",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"rate\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3031/rates",
+							"host": [
+								"localhost"
+							],
+							"port": "3031",
+							"path": [
+								"rates"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-rates",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3031/rates",
+							"host": [
+								"localhost"
+							],
+							"port": "3031",
+							"path": [
+								"rates"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-rates-single",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3031/rates/6146f8b4f2e05a8d5c706d09",
+							"host": [
+								"localhost"
+							],
+							"port": "3031",
+							"path": [
+								"rates",
+								"6146f8b4f2e05a8d5c706d09"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-rateReport",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3031/rateReport",
+							"host": [
+								"localhost"
+							],
+							"port": "3031",
+							"path": [
+								"rateReport"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "responses",
+			"item": [
+				{
+					"name": "get-response",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3031/responses",
+							"host": [
+								"localhost"
+							],
+							"port": "3031",
+							"path": [
+								"responses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post-response",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"response\": [\r\n        {\r\n            \"question\": \"test qns\",\r\n            \"answer\": \"test answer\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3031/responses",
+							"host": [
+								"localhost"
+							],
+							"port": "3031",
+							"path": [
+								"responses"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "questions",
+			"item": [
+				{
+					"name": "get-questions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3031/questions",
+							"host": [
+								"localhost"
+							],
+							"port": "3031",
+							"path": [
+								"questions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post-questions",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"question\": \"Rate us?\",\r\n    \"placeHolder\": \"Please rate high!\",\r\n    \"type\": \"linear scale\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3031/questions",
+							"host": [
+								"localhost"
+							],
+							"port": "3031",
+							"path": [
+								"questions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patch-questions",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"question\": \"Rate us??\",\r\n    \"placeHolder\": \"Please rate high!\",\r\n    \"type\": \"linear scale\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3031/questions/6146fdefeff5f785924ab136",
+							"host": [
+								"localhost"
+							],
+							"port": "3031",
+							"path": [
+								"questions",
+								"6146fdefeff5f785924ab136"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-questions",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3031/questions/6145b37ea69892b97207e8f2",
+							"host": [
+								"localhost"
+							],
+							"port": "3031",
+							"path": [
+								"questions",
+								"6145b37ea69892b97207e8f2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
